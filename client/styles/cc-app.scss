@@ -1,0 +1,50 @@
+$theme-color-light: #ffbd45;
+$theme-color-main: #fb8c00;
+$theme-color-dark: #c25e00;
+
+#login-dropdown-list {
+  margin-left: -60%;
+ }
+
+.login-form-create-account, .login-form-forgot-password, .login-form-sign-in {
+  #login-dropdown-list {
+    margin-left: -290%;
+  }
+}
+
+#login-buttons .login-close-text {
+  float: right;
+}
+
+.login-button {
+    background: $theme-color-main !important;
+    border-color: $theme-color-dark !important;
+    &:hover {
+      background: $theme-color-light !important;
+    }
+}
+
+.list {
+  max-height: 130px;
+  overflow-y: scroll;
+  position: relative;
+
+  &::-webkit-scrollbar {
+      width: 0.5em;
+  }
+
+  &::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 1px $theme-color-light;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $theme-color-main;
+    outline: 1px solid $theme-color-dark;
+  }
+}
+
+.addButton {
+  @media screen and (max-width: 500px) {
+   left: 66% !important;
+ }
+}
